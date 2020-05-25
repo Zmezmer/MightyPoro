@@ -1,7 +1,9 @@
+const { prefix } = require('../../config.json');
+
 module.exports = {
 	config: {
 		name: 'clear',
-		usage: '!clear [1-99]',
+		usage: `${prefix}clear [1-99]`,
 		category: 'miscellaneous',
 		description: 'Delete up to 99 messages at once. Admin use only.',
 		accessableby: 'Admins',

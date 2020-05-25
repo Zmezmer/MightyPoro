@@ -1,10 +1,11 @@
 const { MessageEmbed } = require('discord.js');
 const { red } = require('../../colors.json');
+const { prefix } = require('../../config.json');
 
 module.exports = {
 	config: {
 		name: 'valmaplist',
-		usage: '!valmaplist',
+		usage: `${prefix}valmaplist`,
 		category: 'valorant',
 		description: 'List all the current Valorant maps.',
 		accessableby: 'Verified',

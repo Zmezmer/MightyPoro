@@ -6,7 +6,7 @@ const { prefix } = require('../../config.json');
 module.exports = {
 	config: {
 		name: 'help',
-		usage: '!help',
+		usage: `${prefix}help`,
 		category: 'miscellaneous',
 		description: 'Displays Mighty Poro\'s command list.',
 		accessableby: 'Verified',

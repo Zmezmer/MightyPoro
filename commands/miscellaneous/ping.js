@@ -1,7 +1,9 @@
+const { prefix } = require('../../config.json');
+
 module.exports = {
 	config: {
 		name: 'ping',
-		usage: '!ping',
+		usage: `${prefix}ping`,
 		category: 'miscellaneous',
 		description: 'Pings Mighty Poro to check the latency.',
 		accessableby: 'Verified',

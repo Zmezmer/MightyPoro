@@ -1,16 +1,17 @@
 const { MessageEmbed } = require('discord.js');
 const { blue } = require('../../colors.json');
+const { prefix } = require('../../config.json');
 
 module.exports = {
 	config: {
 		name: 'serverinfo',
-		usage: '!serverinfo',
+		usage: `${prefix}serverinfo`,
 		category: 'miscellaneous',
 		description: 'Displays the server information for OvG.',
 		accessableby: 'Verified',
 	},
 	run: async (bot, message, args) => {
-		const sEmbed = new MessageEmbed()
+		const embed = new MessageEmbed()
 			.setColor(blue)
 			.setThumbnail(message.guild.iconURL())
 			.addFields(
@@ -20,6 +21,6 @@ module.exports = {
 				{ name: 'Member Count', value: message.guild.memberCount, inline: true },
 				{ name: 'Created', value: message.channel.guild.createdAt, inline: true },
 			);
-		message.channel.send({ embed: sEmbed });
+		message.channel.send(embed);
 	},
 };

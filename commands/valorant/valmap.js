@@ -5,7 +5,7 @@ const { red } = require('../../colors.json');
 module.exports = {
 	config: {
 		name: 'valmap',
-		usage: '!valmap [map name]',
+		usage: `${prefix}valmap [map name]`,
 		category: 'valorant',
 		description: 'Display a Valorant map.',
 		accessableby: 'Verified',

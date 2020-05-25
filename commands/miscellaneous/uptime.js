@@ -1,7 +1,9 @@
+const { prefix } = require('../../config.json');
+
 module.exports = {
 	config: {
 		name: 'uptime',
-		usage: '!uptime',
+		usage: `${prefix}uptime`,
 		category: 'miscellaneous',
 		description: 'Displays the uptime for Mighty Poro.',
 		accessableby: 'Verified',

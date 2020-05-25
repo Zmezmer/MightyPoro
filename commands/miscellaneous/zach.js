@@ -1,11 +1,12 @@
 const fs = require('fs');
 const { MessageEmbed } = require('discord.js');
 const { red } = require('../../colors.json');
+const { prefix } = require('../../config.json');
 
 module.exports = {
 	config: {
 		name: 'zach',
-		usage: '!zach',
+		usage: `${prefix}zach`,
 		category: 'miscellaneous',
 		description: 'ZAAACH!',
 		accessableby: 'Verified',

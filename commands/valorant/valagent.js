@@ -5,7 +5,7 @@ const { red } = require('../../colors.json');
 module.exports = {
 	config: {
 		name: 'valagent',
-		usage: '!valgent [agent name]',
+		usage: `${prefix}valgent [agent name]`,
 		category: 'valorant',
 		description: 'Look up the information for a Valorant agent.',
 		accessableby: 'Verified',

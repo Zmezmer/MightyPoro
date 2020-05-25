@@ -1,10 +1,11 @@
 const { MessageEmbed } = require('discord.js');
 const { red } = require('../../colors.json');
+const { prefix } = require('../../config.json');
 
 module.exports = {
 	config: {
 		name: 'valweaponlist',
-		usage: '!valweaponlist',
+		usage: `${prefix}valweaponlist`,
 		category: 'valorant',
 		description: 'List all the current Valorant weapons.',
 		accessableby: 'Verified',

@@ -1,10 +1,11 @@
 const { MessageEmbed } = require('discord.js');
 const { red } = require('../../colors.json');
+const { prefix } = require('../../config.json');
 
 module.exports = {
 	config: {
 		name: 'valagentlist',
-		usage: '!valagentlist',
+		usage: `${prefix}valagentlist`,
 		category: 'valorant',
 		description: 'List all current Valorant agents.',
 		accessableby: 'Verified',
