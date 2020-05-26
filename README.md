@@ -6,5 +6,6 @@ Discord bot for OvG.
 ## Requirements
 
 * [Node.js 12.x](https://nodejs.org/en/)
+* Run `npm install` inside project folder to install dependencies.
 
 <img src='https://images5.alphacoders.com/105/1057451.jpg' align='center'>
