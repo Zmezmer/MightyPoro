@@ -10,7 +10,7 @@ module.exports = {
 		description: 'Look up the information for a Valorant weapon.',
 		accessableby: 'Verified',
 	},
-	run: async (bot, message, args) => {
+	run: async (bot, message) => {
 		try {
 			const Weapons = {
 				classic: {

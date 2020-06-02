@@ -11,7 +11,7 @@ module.exports = {
 		description: 'ZAAACH!',
 		accessableby: 'Verified',
 	},
-	run: async (bot, message, args) => {
+	run: async (bot, message) => {
 		try {
 			if (message.member.voice.channel) {
 				const connection = await message.member.voice.channel.join();

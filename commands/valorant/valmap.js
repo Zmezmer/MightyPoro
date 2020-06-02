@@ -10,7 +10,7 @@ module.exports = {
 		description: 'Display a Valorant map.',
 		accessableby: 'Verified',
 	},
-	run: async (bot, message, args) => {
+	run: async (bot, message) => {
 		try {
 			const Maps = {
 				bind: {

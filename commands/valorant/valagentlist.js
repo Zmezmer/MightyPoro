@@ -10,7 +10,7 @@ module.exports = {
 		description: 'List all current Valorant agents.',
 		accessableby: 'Verified',
 	},
-	run: async (bot, message, args) => {
+	run: async (bot, message) => {
 		try {
 			const embed = new MessageEmbed()
 				.setColor(red)

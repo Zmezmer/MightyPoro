@@ -8,10 +8,10 @@ module.exports = {
 		description: 'Pings Mighty Poro to check the latency.',
 		accessableby: 'Verified',
 	},
-	run: async (bot, message, args) => {
+	run: async (bot, message) => {
 		message.channel.send('Pinging...').then(m => {
-			const ping = m.createdTimestamp - message.createdTimestamp;
-			m.edit(`Bot Latency: \`${ping}ms\``);
+			const latency = m.createdTimestamp - message.createdTimestamp;
+			m.edit(`Bot Latency: \`${latency}ms\``);
 		});
 	},
 };

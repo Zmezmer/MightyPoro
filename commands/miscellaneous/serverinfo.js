@@ -10,7 +10,7 @@ module.exports = {
 		description: 'Displays the server information for OvG.',
 		accessableby: 'Verified',
 	},
-	run: async (bot, message, args) => {
+	run: async (bot, message) => {
 		const embed = new MessageEmbed()
 			.setColor(blue)
 			.setThumbnail(message.guild.iconURL())
