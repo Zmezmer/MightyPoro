@@ -16,7 +16,7 @@ module.exports = {
 				.setColor(red)
 				.setTitle('Valorant Maps')
 				.setThumbnail('https://i.imgur.com/Zg07kqa.png')
-				.setDescription('- Bind\n- Haven\n- Split');
+				.setDescription('- Bind\n- Haven\n- Split\n- Ascent');
 			message.channel.send(embed);
 		} catch (error) {
 			message.channel.send('I\'m having trouble bringing up the map list.');

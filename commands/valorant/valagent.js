@@ -158,7 +158,7 @@ module.exports = {
 					cability: 'Barrier Orb',
 					qcost: '100',
 					qability: 'Slow Orb',
-					ecost: 'Free, 35 sec cooldown.',
+					ecost: 'Free, 45 sec cooldown.',
 					eability: 'Healing Orb',
 					xcost: '7 Ult Points',
 					xability: 'Resurrection',

@@ -31,6 +31,12 @@ module.exports = {
 					bombsites: '2',
 					teleporters: '0',
 				},
+				ascent: {
+					name: 'ASCENT',
+					image: 'https://i.imgur.com/MKObuFm.png',
+					bombsites: '2',
+					teleporters: '0',
+				},
 			};
 
 			const name = message.content.toLowerCase().substr(prefix.length + 7);

@@ -3,12 +3,13 @@ const { token, prefix } = require('./config.json');
 const bot = new Client();
 
 bot.commands = new Collection();
-command = require(`./handler/command.js`)(bot);
+// eslint-disable-next-line no-undef
+command = require('./handler/command.js')(bot);
 
 bot.once('ready', () => {
 	console.log(`${bot.user.username} is online.`);
 	bot.user.setActivity(`mightyporo.com | ${prefix}help`, { type: 'PLAYING' });
-})
+});
 
 bot.on('message', async message => {
 	if (message.author.bot || message.channel.type === 'dm') return;
@@ -25,10 +26,10 @@ bot.on('message', async message => {
 	const commandfile = bot.commands.get(cmd);
 
 	if (commandfile) {
-		commandfile.run(bot, message, args)
+		commandfile.run(bot, message, args);
 	} else {
 		message.channel.send('Did you type the command correctly? Use ``!help`` to view my list of commands.');
-	};
+	}
 });
 
 bot.on('guildMemberAdd', member => {

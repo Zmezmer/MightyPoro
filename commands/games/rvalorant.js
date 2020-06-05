@@ -16,12 +16,16 @@ module.exports = {
 			member.roles.add(role).catch(err => {
 				console.error(err);
 			});
-			message.channel.send('Role added.');
+			if (message.guild.roles.cache.find(r => r.name === 'Valorant')) {
+				message.channel.send(`${message.author}, role added.`);
+			} else {
+				message.channel.send(`${message.author}, I couldn't find that role. Has it been created yet?`);
+			}
 		} else {
 			member.roles.remove(role).catch(err => {
 				console.error(err);
 			});
-			message.channel.send('Role removed.');
+			message.channel.send(`${message.author}, role removed.`);
 		}
 	},
 };
