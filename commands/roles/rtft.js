@@ -4,7 +4,7 @@ module.exports = {
 	config: {
 		name: 'rtft',
 		usage: `${prefix}rtft`,
-		category: 'games',
+		category: 'roles',
 		description: 'Join the TFT role to be alerted when others want to play TFT.',
 		accessableby: 'Verified',
 	},

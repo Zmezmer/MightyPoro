@@ -1,4 +1,7 @@
 {
-"token": "INSERT-TOKEN-HERE",
-"prefix": "!"
+    "token": "INSERT-TOKEN-HERE",
+    "prefix": "!",
+    "nodes": [
+        { "host": "localhost", "port": 2333, "password": "youshallnotpass" }
+    ]
 }

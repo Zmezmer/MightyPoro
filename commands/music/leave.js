@@ -9,7 +9,7 @@ module.exports = {
 		accessableby: 'Verified',
 	},
 	run: async (bot, message, args) => {
-		const { voiceChannel } = message.member;
+		const voiceChannel = message.member.voice.channel;
 		const player = bot.music.players.get(message.guild.id);
 
 		if(!player) return message.channel.send('No songs are currently playing on this server.');

@@ -4,7 +4,7 @@ module.exports = {
 	config: {
 		name: 'rlol',
 		usage: `${prefix}rlol`,
-		category: 'games',
+		category: 'roles',
 		description: 'Join the LoL role to be alerted when others want to play LoL.',
 		accessableby: 'Verified',
 	},

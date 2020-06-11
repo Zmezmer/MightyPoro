@@ -12,11 +12,11 @@ module.exports = {
 		const player = bot.music.players.get(message.guild.id);
 		if (!player) return message.channel.send('No songs are currently playing in this server.');
 
-		const { voiceChannel } = message.member;
+		const voiceChannel = message.member.voice.channel;
 		if (!voiceChannel || voiceChannel.id !== player.voiceChannel.id) return message.channel.send('You need to be in a voice channel to pause music.');
 
 
 		player.pause(player.playing);
-		return message.channel.send(`Player is now ${player.playing ? 'resumed' : 'paused'}.`);
+		return message.channel.send(`Player is now ${player.playing ? 'resumed' : 'paused. Use ``!pause`` again to resume'}.`);
 	},
 };
