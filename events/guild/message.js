@@ -1,8 +1,7 @@
 const { prefix } = require('../../config.json');
 
 module.exports = async (bot, message) => {
-	if (message.author.bot || message.channel.type === 'dm') return;
-	if (!message.content.startsWith(prefix)) return;
+	if (!message.content.startsWith(prefix) || message.author.bot || message.channel.type === 'dm') return;
 
 	const memberRole = message.member.roles.cache.some(role => role.name === 'Verified');
 

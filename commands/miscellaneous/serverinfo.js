@@ -12,6 +12,7 @@ module.exports = {
 	},
 	run: async (bot, message) => {
 		const embed = new MessageEmbed()
+			.setDescription(`**${message.guild.name}**`)
 			.setColor(blue)
 			.setThumbnail(message.guild.iconURL())
 			.addFields(

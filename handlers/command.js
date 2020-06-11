@@ -8,5 +8,5 @@ module.exports = (bot) => {
 			bot.commands.set(pull.config.name, pull);
 		}
 	};
-	['fun', 'games', 'miscellaneous', 'valorant'].forEach(x => load(x));
+	['fun', 'miscellaneous', 'music', 'roles', 'valorant'].forEach(x => load(x));
 };
