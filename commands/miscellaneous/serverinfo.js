@@ -53,7 +53,7 @@ module.exports = {
 				`**❯ Idle:** ${members.filter(member => member.presence.status === 'idle').size}`,
 				`**❯ Do Not Disturb:** ${members.filter(member => member.presence.status === 'dnd').size}`,
 				`**❯ Offline:** ${members.filter(member => member.presence.status === 'offline').size}`,
-			])
+			]);
 		message.channel.send(embed);
 	},
 };
