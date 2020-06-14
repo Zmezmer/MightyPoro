@@ -8,6 +8,16 @@ Discord bot for OvG.
 * [JDK 11](https://adoptopenjdk.net/)
 * [Node.js 12.x](https://nodejs.org/en/)
 * Run `npm install` inside project folder to install dependencies.
+* Create a config.json file in the project folder and copy this code into it.
+```
+{
+    "token": "INSERT-BOT-TOKEN-HERE",
+    "prefix": "!",
+    "nodes": [
+        { "host": "localhost", "port": 2333, "password": "youshallnotpass" }
+    ]
+}
+```
 
 ## Optional
 
