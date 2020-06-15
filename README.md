@@ -5,7 +5,7 @@ Discord bot for OvG.
 
 ## Requirements
 
-* [JDK 11](https://adoptopenjdk.net/)
+* [JDK 13](https://adoptopenjdk.net/archive.html?variant=openjdk13&jvmVariant=hotspot)
 * [Node.js 12.x](https://nodejs.org/en/)
 * Run `npm install` inside project folder to install dependencies.
 * Create a config.json file in the project folder and copy this code into it.
