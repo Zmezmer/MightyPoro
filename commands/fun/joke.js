@@ -11,20 +11,20 @@ module.exports = {
 		description: 'Mighty Poro tells a random joke.',
 		accessableby: 'Verified',
 	},
-	run: async (bot, message, args) => {
+	run: async (bot, message) => {
 		const getJoke = async () => {
-            const response = await axios.get(
-                'https://official-joke-api.appspot.com/random_joke'
-            );
-            const joke = response.data;
-            return joke;
-        };
-        const jokeValue = await getJoke();
-        const embed = new MessageEmbed()
-                .setColor(blue)
-                .setThumbnail(message.guild.iconURL())
-				.setTitle('Jokes!')
-				.setDescription(`${jokeValue.setup}\n\n${jokeValue.punchline}`)
-			message.channel.send(embed);
+			const response = await axios.get(
+				'https://official-joke-api.appspot.com/random_joke',
+			);
+			const joke = response.data;
+			return joke;
+		};
+		const jokeValue = await getJoke();
+		const embed = new MessageEmbed()
+			.setColor(blue)
+			.setThumbnail(bot.user.displayAvatarURL())
+			.setTitle('Jokes!')
+			.setDescription(`${jokeValue.setup}\n\n${jokeValue.punchline}`);
+		message.channel.send(embed);
 	},
 };
