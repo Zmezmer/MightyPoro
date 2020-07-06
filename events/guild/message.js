@@ -4,7 +4,6 @@ module.exports = async (bot, message) => {
 	if (!message.content.startsWith(prefix) || message.author.bot || message.channel.type === 'dm') return;
 
 	const memberRole = message.member.roles.cache.some(role => role.name === 'Verified');
-
 	if (!memberRole) {
 		return message.reply('You must be a Verified user to interact with me.');
 	}

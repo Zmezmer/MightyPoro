@@ -19,14 +19,15 @@
   "dependencies": {
     "@discordjs/opus": "^0.3.2",
     "axios": "^0.19.2",
+    "chance": "^1.1.6",
     "common-tags": "^1.8.0",
     "discord.js": "^12.2.0",
     "erela.js": "^1.1.8",
     "fs": "0.0.1-security",
-    "moment": "^2.26.0",
+    "moment": "^2.27.0",
     "ms": "^2.1.2"
   },
   "devDependencies": {
-    "eslint": "^7.2.0"
+    "eslint": "^7.4.0"
   }
 }
